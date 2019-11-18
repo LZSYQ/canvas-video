@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <style>
+    body {
+      background: black;
+      color: #CCCCCC;
+    }
+
+    #c1,
+    #c2 {
+      background-image: url('http://192.168.1.77/4.jpg');
+      background-repeat: no-repeat;
+    }
+
+    div {
+      float: left;
+      border: 1px solid #444444;
+      padding: 10px;
+      margin: 10px;
+      background: #3B3B3B;
+    }
+  </style>
+  <!-- <script type="text/javascript;" src="./main.js"></script> -->
+  <script src="./main.js"></script>
+</head>
+
+<body onload="processor.doLoad()">
+  <div>
+    <video id="video" src="./11.mp4" controls="true" />
+  </div>
+  <div>
+    <!-- <canvas id="c1" width="860" height="396"></canvas> -->
+    <canvas id="c2" width="860" height="396"></canvas>
+  </div>
+  <hr>
+
+  <button onClick="changeAnim(processor.reverseColor)">反色</button>
+  <button onClick="changeAnim(processor.delColor)">去色</button>
+  <button onClick="changeAnim(processor.singleColor)">单色</button>
+  <button onClick="changeAnim(processor.chinaColor)">中国版画</button>
+  <button onClick="changeAnim(processor.gaussBlur)">高斯模糊</button>
+  <button onClick="changeAnim(processor.reliefProcess)">浮雕</button>
+  <hr>
+</body>
+
+</html>
